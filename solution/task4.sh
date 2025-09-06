@@ -2,5 +2,5 @@
 
 # Вывести дату в формате:
 #   Freitag, 13. Oktober 2023
-#date '+???' -d "$@"
-echo "$(LC_TIME=de_DE.utf8 date +'%A' -d "$@"), $(date +'%d' -d "$@"). $(LC_TIME=en_US.utf8 date +'%B' -d "$@") $(date +'%Y' -d "$@")"
+export LC_ALL=de_DE.utf8
+date '+%A %d. %B %Y' -d "$@"
