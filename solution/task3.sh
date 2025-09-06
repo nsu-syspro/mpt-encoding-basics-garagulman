@@ -4,4 +4,4 @@
 #   13 октября 2023 года, Пятница
 
 export LC_ALL=ru_RU.utf8
-date '+%d %B %Y года, %A' -d "$@"
+date '+%-d %B %Y года, %A' -d "$@"
